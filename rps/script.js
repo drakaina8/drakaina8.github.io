@@ -1,7 +1,6 @@
 // Global Variables
 let playerSelection;
 let compSelection;
-let count = 0;
 
 function initializeGame() {
     document.querySelector("#game-start")
@@ -141,11 +140,6 @@ function restartGame() {
         document.querySelector("#play-again").style.display = "none";
         document.querySelector("#play-hand").style.display = "block";
 
-        // Testing call stack
-        count++;
-        if (count === 5) {
-            console.log("fifth game");
-        }
         playRound();
     });
 }
